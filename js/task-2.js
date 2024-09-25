@@ -1,15 +1,13 @@
 // Görev 2. Kalori Hesaplama
 function calcAverageCalories(days) {
   let total = 0;
+  let avarage = 0;
   for (const day of days) {
     total += day.calories;
+    avarage = total / days.length;
   }
 
-  if (days.length === 0) {
-    return 0;
-  }
-
-  return total / days.length;
+  return avarage;
 }
 
 console.log(
